@@ -7,6 +7,7 @@ import { Llamadas } from './pages/Llamadas'
 import { Cenas } from './pages/Cenas'
 import { Sitios } from './pages/Sitios'
 import './index.css'
+import { Final } from './pages/Final'
 
 export function App () {
   return (
@@ -20,6 +21,7 @@ export function App () {
         <Route path='/dinner' element={<Cenas />} />
         <Route path='/calls' element={<Llamadas />} />
         <Route path='/madrid' element={<Madrid />} />
+        <Route path='/final' element={<Final />} />
       </Routes>
     </main>
   )

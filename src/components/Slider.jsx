@@ -2,7 +2,7 @@
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { useState } from 'react'
 
-export function Slider ({ img }) {
+export function Slider ({ img, imgText }) {
   const [imgPos, setImgPos] = useState(0)
 
   const handleNext = () => {
@@ -34,6 +34,7 @@ export function Slider ({ img }) {
       <div className='flex items-center justify-center w-full h-80 bor'>
         <img src={img[imgPos]} alt='hola' className='w-[256px] h-[256px]' />
       </div>
+      <p>{imgText[imgPos]}</p>
       {/* <div className='flex justify-around w-24 mt-4'>
         <div className={imgPos === 0 ? 'w-2 rounded-full bg-white h-2' : 'w-2 rounded-full bg-black h-2'} />
         <div className={imgPos === 1 ? 'w-2 rounded-full bg-white h-2' : 'w-2 rounded-full bg-black h-2'} />
